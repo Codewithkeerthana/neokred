@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f3f0;
+  color: #333;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #f24e29;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 1200px;  
+  margin: 0 auto;     
+  padding: 0 15px;    
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;          
+  flex-wrap: nowrap;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: rgb(98, 98, 98);
+  text-align: center;
+  margin: 8px 0;  
+}
+
+.editor-container,
+.preview-container {
+  flex: 1; 
+  padding: 20px;     
+  background-color: transparent;
+}
+
+.editor-container {
+  padding-left: 6px; 
+}
+
+textarea,
+.markdown-preview {
+  width: 100%; 
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #f4c2c2;
+  box-sizing: border-box; 
+  margin: 0; 
+}
+
+textarea {
+  height: 500px; 
+  background-color: #1e1e1e;
+  color: white;
+  resize: none;
+}
+
+.markdown-preview {
+  height: 500px;
+  background-color: #fff;
+  color: #000; 
+  overflow-y: auto;
+}
+
+.markdown-preview pre {
+  background-color: #282c34;
+  color: #f8f8f2;
+  padding: 10px;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 6px; 
+  }
+
+  .flex {
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  textarea,
+  .markdown-preview {
+    height: 300px; 
+    margin: 10px 0;
+  }
+}
